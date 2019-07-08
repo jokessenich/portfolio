@@ -1,0 +1,53 @@
+
+body{
+background-color: black;
+color: white;
+box-sizing: border-box;
+}
+
+ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: flex-end;
+	color: gray;
+}
+	
+
+main{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+h1{
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+h2{
+	margin-bottom: 300px;
+	text-indent: 2em;
+}
+
+.bio{
+	background-color:gray;
+	width: 324px;
+	height:100px;
+	border: white 2px solid;
+	font-size: 18pt;
+	text-align:center;
+}
+.bio>p{
+	font-size:12pt;
+}
+
+.projects{
+	background-color:gray;
+
+	width: 324px;
+	height:60px;
+	border: white 2px solid;
+	font-size: 18pt;
+	text-align:center;
+	margin-bottom: 30px;
+}
