@@ -1,10 +1,12 @@
 *{
   box-sizing: border-box;
 }
+
 body{
-background-color: #003249;
-background-size: auto;
-color: white;
+  background-color: #003249;
+  background-size: auto;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
 }
 
 a {
@@ -33,44 +35,66 @@ main{
 }
 
 h1{
-	font-family: 'Work Sans', sans-serif;
 	color: #7FFFD4;
 	margin-top: 100px;
 	margin-bottom: 50px;
+  font-size: 4em;
 }
 
 h2{
 	color: #FFD700;
 	font-family: 'Work Sans', sans-serif;
-	margin-bottom: 150px;
 	text-indent: 4em;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+h3{
+	color: #7FFFD4;
+  text-indent: 16em;
+  margin-bottom: 150px;
+  font-size: 2em;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	height:auto;
+	color: black;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .label{
-  padding: 10px;
-	font-family: 'Montserrat', sans-serif;
-	background-color: #7FFFD4;
-	width: 400px;
-	height:auto;
-	border-radius: 5px;
-	font-size: 18pt;
-	text-align:center;
-	color: black;
+  background-color:#7FFFD4;
+  border-radius: 5px;
+ 	font-size: 40pt;
   margin-bottom: 20px;
   margin-top: 50px;
+  width: 100%;
+  padding: 15px;
+
+  margin-left:0;
+  margin-right:0px;
+ 	text-align:center;
+
 }
 
 .project-title {
+  margin-top: 50px;
   font-family: 'Montserrat', sans-serif;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  font-size: 18pt;
+  font-weight: bold;
+  font-size: 40pt;
+  color: white;
 }
 
 .section > p{
+  padding-left: 30px;
   font-family: 'Montserrat', sans-serif;
-  width: 350px;
-	font-size:14pt;
+	font-size:30pt;
   text-align: left;
   line-height: 1.5;
   //background-color: #454851;
@@ -82,51 +106,63 @@ h2{
 }
 
 footer{
+
   width: 100%;
-  height: 30px;
+  height: 60px;
   position: fixed;
   bottom: 0px;
   left: 0px;
   background-color:#7FFFD4;
 }
 
-.projects >p> img{
-  margin-bottom: 20px;
+#projects > img{
   margin-top: 20px;
   display: block;
+  margin-left:auto;
+  margin-right: auto;
 }
 
 .icons{
-  padding-top: 5px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-@media screen and (min-width: 600px){
-
-  .label{
-    width: 500px;
+@media screen and (min-width: 768px){
+  #projects > img{
+    margin:auto;
+    width:600px;
+    height:auto;
   }
-
-  .section>p{
-    width: 500px;
-  }
+  
 }
 
-@media screen and (min-width: 1000px){
-  .projects >img{
-    width: 500px;
-  }
+@media screen and (min-width: 1600px){
 
-    .section>p{
-    
-    width: 600px;
-  }
-projects{
-  margin:auto;
+#bio{
+  position: absolute;
+  right: 50px;
+  width:45%;
+  top: 400px;
 }
-
+#bio>p{
+  font-size: 24pt;
+}
+.label{
+  width: 45%
+  font-size:30pt;
+  padding: 10px;
+}
+#projects{
+  position:absolute;
+  left: 50px;
+  width: 45%;
+  margin-top: 450px;
+}
+#projects>p{
+  font-size: 24pt;
+}
 }
 
 
